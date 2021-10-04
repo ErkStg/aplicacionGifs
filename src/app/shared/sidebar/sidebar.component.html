@@ -1,0 +1,11 @@
+<div id="sidebar" class="bg-dark border-right p-3 text-light">
+    <h3>
+      GifsApp
+    </h3>
+    <hr class="text-white">
+    <div class="list-group">
+      <a *ngFor="let resultado of historial" (click)="buscar(resultado)" href="#" class="list-group-item list-group-item-action">
+        {{ resultado | titlecase }}
+      </a>
+    </div>
+  </div>
